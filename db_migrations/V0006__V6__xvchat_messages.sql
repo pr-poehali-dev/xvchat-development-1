@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS xvchat_messages (id TEXT PRIMARY KEY, chat_id TEXT NOT NULL, sender_id TEXT NOT NULL, content TEXT, content_type TEXT NOT NULL DEFAULT 'text', file_url TEXT, file_name TEXT, file_size INTEGER, duration INTEGER, is_read BOOLEAN DEFAULT FALSE, read_at TIMESTAMPTZ, created_at TIMESTAMPTZ DEFAULT NOW(), hidden BOOLEAN DEFAULT FALSE);

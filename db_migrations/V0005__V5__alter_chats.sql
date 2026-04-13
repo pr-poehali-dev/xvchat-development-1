@@ -1,0 +1,1 @@
+ALTER TABLE xvchat_chats ADD COLUMN IF NOT EXISTS last_message_at TIMESTAMPTZ;

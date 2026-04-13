@@ -1,0 +1,19 @@
+{
+  "tests": [
+    {
+      "name": "GET / without auth returns 401",
+      "method": "GET",
+      "path": "/",
+      "expectedStatus": 401,
+      "bodyMatcher": "partial",
+      "expectedBody": {"error": "Не авторизован"}
+    },
+    {
+      "name": "GET /search without auth returns 401",
+      "method": "GET",
+      "path": "/search?q=test",
+      "expectedStatus": 401,
+      "bodyMatcher": "partial"
+    }
+  ]
+}

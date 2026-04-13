@@ -1,0 +1,12 @@
+{
+  "tests": [
+    {
+      "name": "POST /register missing fields returns 400",
+      "method": "POST",
+      "path": "/register",
+      "body": {"name": "A", "password": "short"},
+      "expectedStatus": 400,
+      "bodyMatcher": "partial"
+    }
+  ]
+}
